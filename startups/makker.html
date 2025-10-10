@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup: Makker Clothing - Wilfred Hirst</title>
+    <link rel="icon" type="image/png" href="../assets/WH icon white.png">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop playsinline id="backgroundVideo">
+        <source src="../assets/Background video.mp4" type="video/mp4">
+    </video>
+    <div class="background-video-overlay"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/WH icon white.png" alt="Wilfred Hirst" class="nav-logo-icon">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html#startups" class="nav-link">Startups</a></li>
+                <li><a href="../index.html#contract" class="nav-link">Contract & Advisory</a></li>
+                <li><a href="../index.html#resume" class="nav-link">Work Experience</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="startup-detail">
+        <div class="container">
+            <header class="startup-header">
+                <h1 class="startup-title">Startup: <a href="https://www.kickstarter.com/projects/wilfredhirst/makker-magnetic-keychain" target="_blank" class="company-link">Makker Clothing</a></h1>
+                
+                <div class="startup-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Dates Live</div>
+                        <div class="meta-value">2015 - 2017</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Type</div>
+                        <div class="meta-value">D2C Fashion</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Role</div>
+                        <div class="meta-value">Founder</div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="startup-summary">
+                <p>Makker Clothing began with a successful Kickstarter campaign for a unique magnetic keychain product. This initial success grew into a comprehensive wallet and sustainable clothing D2C company focused on creating high-quality, ethically-sourced apparel with innovative design elements.</p>
+
+                <p>The company specialized in minimalist designs with maximum impact, using eco-friendly materials and transparent supply chain practices. Starting with the magnetic keychain innovation, we expanded into wallets and eventually a full sustainable clothing line that resonated with conscious consumers.</p>
+
+                <p>Through the initial Kickstarter success and innovative product development, we grew from a single product concept to a recognized brand in the sustainable fashion space, serving customers across North America with our unique magnetic accessories and sustainable apparel.</p>
+            </section>
+
+            <section class="startup-media">
+                <h2 class="section-heading">Media</h2>
+                <div class="media-grid">
+                    <div class="media-item">
+                        <video class="media-video" controls>
+                            <source src="../assets/makker-kickstarter video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="media-title">Kickstarter Campaign Video</div>
+                    </div>
+                    <div class="media-item">
+                        <img src="../assets/Makker Keychains.png" alt="Makker Keychains" class="media-image">
+                        <div class="media-title">Original Magnetic Keychains</div>
+                    </div>
+                    <div class="media-item">
+                        <img src="../assets/Makker Clother portfolio.png" alt="Makker Clothing Portfolio" class="media-image">
+                        <div class="media-title">Clothing Collection</div>
+                    </div>
+                    <div class="media-item">
+                        <img src="../assets/makker kickstarter.png" alt="Makker Kickstarter Campaign" class="media-image">
+                        <div class="media-title">Kickstarter Campaign</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="startup-partners">
+                <h2 class="section-heading">Partners</h2>
+                <div class="partners-list">
+                    <div class="partner-item">
+                        <span class="partner-name">Kickstarter</span>
+                        <a href="https://kickstarter.com" class="partner-link" target="_blank">kickstarter.com</a>
+                    </div>
+                    <div class="partner-item">
+                        <span class="partner-name">AboveSummit</span>
+                        <a href="https://AboveSummit.com" class="partner-link" target="_blank">AboveSummit.com</a>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="navigation-buttons">
+                <a href="../index.html#portfolio" class="nav-link">← Back to Portfolio</a>
+                <a href="deadi.html" class="nav-link">Next: Deadi →</a>
+            </nav>
+        </div>
+    </main>
+
+
+    <script src="../main.js"></script>
+    <script>
+        // Start background video at 4 seconds
+        document.addEventListener('DOMContentLoaded', function() {
+            const backgroundVideo = document.getElementById('backgroundVideo');
+
+            if (backgroundVideo) {
+                backgroundVideo.addEventListener('loadedmetadata', function() {
+                    // Set the current time to 4 seconds
+                    backgroundVideo.currentTime = 4;
+                });
+
+                // Handle the loop to restart at 4 seconds instead of 0
+                backgroundVideo.addEventListener('ended', function() {
+                    backgroundVideo.currentTime = 4;
+                    backgroundVideo.play();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

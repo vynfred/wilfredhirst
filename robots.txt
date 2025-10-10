@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://wilfredhirst-site.web.app/sitemap.xml
+
+# Disallow crawling of certain file types
+Disallow: *.mp4$
+Disallow: *.mov$
+Disallow: *.avi$
+
+# Allow crawling of CSS and JS files
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+
+# Crawl delay (optional - be respectful to server resources)
+Crawl-delay: 1

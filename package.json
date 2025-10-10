@@ -1,0 +1,13 @@
+{
+  "name": "wilfred-hirst-site",
+  "version": "1.0.0",
+  "description": "Personal brand website for Wilfred",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": ["personal", "portfolio", "website"],
+  "author": "Wilfred",
+  "license": "MIT"
+}
