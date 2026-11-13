@@ -1,0 +1,436 @@
+[
+  {
+    "kind": "image",
+    "slug": "medusa-white",
+    "title": "Medusa White",
+    "src": "/art/medusa-white.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "miami-beach-vibes",
+    "title": "Miami Beach Vibes",
+    "src": "/art/miami-beach-vibes.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "drink",
+    "title": "Drink",
+    "src": "/art/drink.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "gray-movement",
+    "title": "Gray Movement",
+    "src": "/art/gray-movement.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "mary",
+    "title": "Mary",
+    "src": "/art/mary.webp",
+    "width": 430,
+    "height": 567
+  },
+  {
+    "kind": "image",
+    "slug": "medusa-blue",
+    "title": "Medusa Blue",
+    "src": "/art/medusa-blue.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "analog-is-better",
+    "title": "Analog Is Better",
+    "src": "/art/analog-is-better.webp",
+    "width": 588,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "bar-light",
+    "title": "Bar Light",
+    "src": "/art/bar-light.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "snake-sketch",
+    "title": "Snake Sketch",
+    "src": "/art/snake-sketch.webp",
+    "width": 588,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "childhood-bliss",
+    "title": "Childhood Bliss",
+    "src": "/art/childhood-bliss.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "overpass",
+    "title": "Overpass",
+    "src": "/art/overpass.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "pink-movement",
+    "title": "Pink Movement",
+    "src": "/art/pink-movement.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "aura",
+    "title": "Aura",
+    "src": "/art/aura.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "nirvana",
+    "title": "Nirvana",
+    "src": "/art/nirvana.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "santa-monica",
+    "title": "Santa Monica",
+    "src": "/art/santa-monica.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "flight",
+    "title": "Flight",
+    "src": "/art/flight.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "lip-service",
+    "title": "Lip Service",
+    "src": "/art/lip-service.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "tiger",
+    "title": "Tiger",
+    "src": "/art/tiger.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "triangle",
+    "title": "Triangle",
+    "src": "/art/triangle.webp",
+    "width": 570,
+    "height": 460
+  },
+  {
+    "kind": "image",
+    "slug": "bright",
+    "title": "Bright",
+    "src": "/art/bright.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "bold-florcita",
+    "title": "Bold Florcita",
+    "src": "/art/bold-florcita.webp",
+    "width": 588,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "untitiled",
+    "title": "Untitled",
+    "src": "/art/untitiled.webp",
+    "width": 430,
+    "height": 567
+  },
+  {
+    "kind": "image",
+    "slug": "war-pimps-negative",
+    "title": "War Pimps Negative",
+    "src": "/art/war-pimps-negative.webp",
+    "width": 460,
+    "height": 571
+  },
+  {
+    "kind": "image",
+    "slug": "blob",
+    "title": "Blob",
+    "src": "/art/blob.webp",
+    "width": 588,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "love",
+    "title": "Love",
+    "src": "/art/love.webp",
+    "width": 430,
+    "height": 567
+  },
+  {
+    "kind": "video",
+    "slug": "motion-iv",
+    "title": "Motion IV",
+    "assetId": "f4NXgjYELps01DJNIQqYUbndhi88MSZYlVB16sPJD00cQ",
+    "playbackId": "3cwOss1BkXzqZWrIVHuncyR34TgXZb025UsGs6o1av44",
+    "aspect": "43:30"
+  },
+  {
+    "kind": "image",
+    "slug": "tiger-red",
+    "title": "Tiger Red",
+    "src": "/art/tiger-red.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "joan-of-arc",
+    "title": "Joan of Arch",
+    "src": "/art/joan-of-arc.webp",
+    "width": 588,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "mind-blown",
+    "title": "Mind Blown",
+    "src": "/art/mind-blown.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "echo",
+    "title": "Echo",
+    "src": "/art/echo.webp",
+    "width": 446,
+    "height": 587
+  },
+  {
+    "kind": "video",
+    "slug": "cosmic-conversations",
+    "title": "Cosmic Conversations",
+    "poster": "/art/cosmic-conversations-poster.jpg",
+    "playbackId": "",
+    "seconds": 78,
+    "aspect": "16:9"
+  },
+  {
+    "kind": "image",
+    "slug": "paradise",
+    "title": "Paradise",
+    "src": "/art/paradise.webp",
+    "width": 430,
+    "height": 567
+  },
+  {
+    "kind": "image",
+    "slug": "aristotle",
+    "title": "Aristotle",
+    "src": "/art/aristotle.webp",
+    "width": 446,
+    "height": 587
+  },
+  {
+    "kind": "video",
+    "slug": "motion-i",
+    "title": "Motion I",
+    "assetId": "Q014n00lKu4R4Adm01bC6QeqAA2VWUNnqKozuwubqDv5pI",
+    "playbackId": "2fcHFPOutLS9mIsqUvwXcb601amRX7WpzFW4qKwQUSes",
+    "aspect": "1:1"
+  },
+  {
+    "kind": "image",
+    "slug": "portal-moon",
+    "title": "Portal Moon",
+    "src": "/art/portal-moon.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "miki-sunset",
+    "title": "Miki Sunset",
+    "src": "/art/miki-sunset.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "orchids",
+    "title": "Orchids",
+    "src": "/art/orchids.webp",
+    "width": 430,
+    "height": 567
+  },
+  {
+    "kind": "image",
+    "slug": "santa-monica-cliff",
+    "title": "Santa Monica Cliff",
+    "src": "/art/santa-monica-cliff.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "pi",
+    "title": "Pi",
+    "src": "/art/pi.webp",
+    "width": 446,
+    "height": 587
+  },
+  {
+    "kind": "image",
+    "slug": "miki-blue",
+    "title": "Miki Blue",
+    "src": "/art/miki-blue.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "bush",
+    "title": "Bush",
+    "src": "/art/bush.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "falling-night",
+    "title": "Falling Night",
+    "src": "/art/falling-night.webp",
+    "width": 590,
+    "height": 476
+  },
+  {
+    "kind": "image",
+    "slug": "hope",
+    "title": "Hope",
+    "src": "/art/hope.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "flowers",
+    "title": "Flowers",
+    "src": "/art/flowers.webp",
+    "width": 452,
+    "height": 588
+  },
+  {
+    "kind": "video",
+    "slug": "motion-iii",
+    "title": "Motion III",
+    "assetId": "75distUR01IjIXvSesoRd93aPhny4aL2k9r02oZnA8qqE",
+    "playbackId": "c1Iw702yTuR384JQiM00wNTkq8i2NIWxz009K2g01poyqrg",
+    "aspect": "773:540"
+  },
+  {
+    "kind": "image",
+    "slug": "pineapple",
+    "title": "Pineapple",
+    "src": "/art/pineapple.webp",
+    "width": 452,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "jungle-rave",
+    "title": "Jungle Rave",
+    "src": "/art/jungle-rave.webp",
+    "width": 588,
+    "height": 452
+  },
+  {
+    "kind": "video",
+    "slug": "illustration-visualization",
+    "title": "Illustration Visualization",
+    "assetId": "x0271u00A8CbR00anA7loEkEppHybjvG00QJIrIn76WjXJ8",
+    "playbackId": "CcXZp6TRwDUyABDYU7IqrFsMwqGJOwDrdqpNC1E6qWk",
+    "poster": "/art/illustration-visualization-poster.jpg",
+    "aspect": "773:540"
+  },
+  {
+    "kind": "video",
+    "slug": "motion-v",
+    "title": "Motion V",
+    "assetId": "001qRcT8uJkQYK5lwFLeef02QcgZaHbw02R1tG2jpltoVY",
+    "playbackId": "kOMsVYuJqjdyadlxcziC02ELJDiLyQtfzc4jMTOPXoIM",
+    "aspect": "773:540"
+  },
+  {
+    "kind": "image",
+    "slug": "war-pimps",
+    "title": "War Pimps",
+    "src": "/art/war-pimps.webp",
+    "width": 476,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "portal-black",
+    "title": "Portal Black",
+    "src": "/art/portal-black.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "image",
+    "slug": "dark-night",
+    "title": "Dark Night",
+    "src": "/art/dark-night.webp",
+    "width": 586,
+    "height": 401
+  },
+  {
+    "kind": "image",
+    "slug": "dark-smile",
+    "title": "Dark Smile",
+    "src": "/art/dark-smile.webp",
+    "width": 589,
+    "height": 588
+  },
+  {
+    "kind": "video",
+    "slug": "motion-ii",
+    "title": "Motion II",
+    "assetId": "WIHSzBNTvua7hIj1PTZ1FLSUCecdE3aB016FyB1HawKQ",
+    "playbackId": "JNsgykxBkp1Nv9yxCIc2y6Ff5bzRjz5X5rpcs34d01J8",
+    "aspect": "773:540"
+  }
+]

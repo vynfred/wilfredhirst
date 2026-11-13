@@ -1,0 +1,140 @@
+/* wilfredhirst.com. Hand-written, small. The palette is the one sampled
+   from the paintings themselves; do not swap a colour for a near one. */
+:root{
+  --paper:      #E9E3D6;
+  --paper-lift: #F2EDE3;
+  --char:       #17140F;
+  --graphite:   #4E4442;
+  --smoke:      #675D5A;
+  --hair:       #C3B9A6;
+  --coral:      #EE3B64;  /* fills, rules and large type only: 3.02:1 on paper */
+  --oxblood:    #6A2A41;  /* small coloured text and links */
+
+  --f-disp: "Syne", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --f-text: "Spectral", Georgia, "Times New Roman", serif;
+  --f-type: "Courier Prime", ui-monospace, "Courier New", monospace;
+
+  --gut: clamp(20px, 5.5vw, 76px);
+  --max: 1180px;
+}
+
+*{ box-sizing: border-box; }
+html, body{ height: 100%; }
+body{
+  margin: 0; background: var(--paper); color: var(--char);
+  font-family: var(--f-text); font-weight: 300; font-size: 17px; line-height: 1.62;
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+
+/* The ground: bone paper from the paintings, with a photographed sheet
+   multiplied over it so the creases show through the tint. */
+#paper{
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-color: var(--paper); background-image: url("/paper.webp");
+  background-size: cover; background-position: center; background-blend-mode: multiply;
+}
+.sheet{ position: relative; z-index: 2; min-height: 100%; display: flex; flex-direction: column; }
+.wrap{ max-width: var(--max); margin: 0 auto; padding-inline: var(--gut); width: 100%; }
+main{ flex: 1; }
+
+h1, h2{ font-family: var(--f-disp); color: var(--char); margin: 0; text-wrap: balance; }
+h1{ font-weight: 800; font-size: clamp(2.6rem, 8vw, 5.6rem); line-height: .98; letter-spacing: -.045em; }
+h1.h-small{ font-weight: 700; font-size: clamp(1.8rem, 4vw, 2.8rem); letter-spacing: -.03em; line-height: 1.05; }
+h2{ font-weight: 700; font-size: clamp(1.3rem, 2.4vw, 1.8rem); line-height: 1.12; letter-spacing: -.025em; }
+p{ margin: 0; }
+a{ color: var(--oxblood); text-underline-offset: 3px; }
+a:focus-visible, [role="button"]:focus-visible{ outline: 2px solid var(--char); outline-offset: 3px; }
+.dim{ color: var(--smoke); }
+.slug{ font-family: var(--f-type); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--smoke); margin: 0; }
+.skip{ position: absolute; left: -9999px; }
+.skip:focus{ left: 12px; top: 12px; z-index: 10; background: var(--char); color: var(--paper); padding: 8px 12px; }
+
+.go{
+  font-family: var(--f-type); font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--oxblood); text-decoration: none; border-bottom: 1px solid var(--hair); padding-bottom: 2px;
+  justify-self: start;
+}
+.go:hover{ border-bottom-color: var(--coral); }
+
+/* Top and bottom */
+.top{ display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding-block: 26px 10px; }
+.word{ font-family: var(--f-disp); font-weight: 800; font-size: 1rem; letter-spacing: .02em; text-transform: uppercase; color: var(--char); text-decoration: none; }
+.top nav{ display: flex; gap: 22px; font-family: var(--f-type); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+.top nav a{ color: var(--smoke); text-decoration: none; padding-bottom: 3px; border-bottom: 1px solid transparent; }
+.top nav a:hover{ color: var(--char); }
+.top nav a.here{ color: var(--char); border-bottom-color: var(--coral); }
+.colophon{ border-top: 1px solid var(--hair); margin-top: clamp(48px, 7vw, 96px); }
+.colophon > .wrap{
+  padding-block: 22px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between;
+  font-family: var(--f-type); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--smoke);
+}
+.colophon a{ color: var(--smoke); text-decoration: none; }
+.colophon a:hover{ color: var(--char); }
+.colophon-links{ display: flex; flex-wrap: wrap; gap: 6px 22px; }
+@media (max-width: 480px){ .top nav{ gap: 14px; font-size: 10px; } }
+
+/* Pages */
+.page{ padding-block: clamp(28px, 6vw, 80px) 0; display: grid; gap: clamp(36px, 5vw, 64px); }
+.lead{ display: grid; gap: 12px; }
+.lead-line{ font-family: var(--f-disp); font-weight: 600; font-size: clamp(1.1rem, 2.4vw, 1.6rem); letter-spacing: -.02em; color: var(--graphite); }
+.lead .dim{ max-width: 58ch; }
+.cols{ display: grid; gap: 12px 40px; padding-top: 22px; border-top: 1px solid var(--hair); }
+@media (min-width: 860px){ .cols{ grid-template-columns: 16ch minmax(0, 1fr); align-items: baseline; } }
+.prose{ display: grid; gap: 14px; max-width: 60ch; }
+.prose p{ font-size: 1.125rem; line-height: 1.6; }
+.prose .go{ margin-top: 4px; }
+
+/* Gallery: a justified collage. Row height is fixed, each piece's width
+   comes from its own aspect ratio (--ar), and flex-grow shares the slack
+   so every row lands flush. The filler at the end stops the last row
+   from stretching. Nothing is cropped. */
+.gal{ --row: clamp(150px, 19vw, 250px); display: flex; flex-wrap: wrap; gap: clamp(10px, 1.4vw, 18px); }
+.gal-fill{ flex: 100 1 0; }
+.piece{
+  flex: var(--ar) 1 calc(var(--ar) * var(--row));
+  aspect-ratio: var(--ar); max-width: min(100%, calc(var(--ar) * var(--row) * 1.5));
+  margin: 0; padding: 0; border: none; background: transparent;
+  cursor: pointer; text-align: left; position: relative; overflow: hidden;
+  line-height: 0; transition: transform .28s ease, box-shadow .28s ease;
+}
+.piece img, .piece mux-player{
+  width: 100%; height: 100%; display: block; object-fit: cover;
+  background: var(--paper-lift); transition: filter .3s ease;
+}
+.piece mux-player{ --controls: none; }
+.piece figcaption{
+  position: absolute; left: 0; right: 0; bottom: 0;
+  font-family: var(--f-type); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--char); background: var(--paper-lift); border-top: 2px solid var(--coral);
+  padding: 8px 11px; line-height: 1.3;
+  transform: translateY(101%); transition: transform .28s ease;
+}
+.piece:hover, .piece:focus-visible{ transform: translateY(-3px); box-shadow: 0 10px 22px -12px rgba(23,20,15,.55); }
+.piece:hover img, .piece:focus-visible img{ filter: contrast(1.06) saturate(1.08); }
+.piece:hover figcaption, .piece:focus-visible figcaption, .piece.lit figcaption{ transform: none; }
+@media (max-width: 619px){
+  .gal{ --row: 160px; }
+  .gal:not(.strip) .piece{ flex-basis: 100%; max-width: 100%; }
+}
+
+/* The strip on Home: one row of the same collage, as a way into it. */
+.strip{ flex-wrap: nowrap; text-decoration: none; --row: clamp(120px, 22vw, 300px); }
+.strip .piece{ flex-shrink: 1; min-width: 0; max-width: none; }
+@media (max-width: 619px){ .strip .piece:nth-child(n+4){ display: none; } }
+
+.piece-note{
+  flex-basis: 100%; display: grid; gap: 6px 40px; line-height: 1.5;
+  padding: 14px 0 20px; margin: 4px 0 6px; border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair);
+}
+@media (min-width: 860px){ .piece-note{ grid-template-columns: minmax(20ch, auto) minmax(0, 1fr) auto; align-items: baseline; } }
+.piece-note .who{ font-family: var(--f-disp); font-weight: 700; font-size: 1.15rem; letter-spacing: -.015em; }
+.piece-note .spec{
+  font-family: var(--f-type); font-size: 10.5px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--oxblood); display: block; margin-top: 4px;
+}
+.piece-note .what{ color: var(--char); font-weight: 400; font-size: .98rem; max-width: 56ch; }
+.piece-note .go{ grid-column: -2 / -1; }
+
+@media (prefers-reduced-motion: reduce){
+  .piece, .piece img, .piece figcaption{ transition: none; }
+}
